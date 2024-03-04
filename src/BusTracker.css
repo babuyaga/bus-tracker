@@ -1,0 +1,73 @@
+.bus-tracker--container{
+  display:flex;
+  height:fit-content;
+  max-width:88vw;
+  margin:auto;
+  margin-top:100px;
+  padding-bottom:600px;
+  }
+  
+  .bus-holder{
+  position: relative;
+ background-color: white;
+ overflow:visible;
+ width:20px;
+  border-radius: 15px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;/* Center children horizontally */
+ }
+  
+  .bus-route-holder{
+  flex-grow:1;
+  display:flex;
+  flex-direction: column;
+  position:relative;
+  }
+  
+  .bus-icon--holder{
+    min-width:26px;
+    height:26px;
+    border-radius: 15px;
+    background-color: #FF6B00;
+    display:flex;
+    position: relative;
+    top:0;
+    /* animation: moveBus 100s linear infinite; Simple animation */
+    transition:top 2s linear;
+    z-index:5;
+    }
+  .bus-icon--holder--sticky{
+    min-width:26px;
+    height:26px;
+    border-radius: 15px;
+    background-color: #FF6B00;
+    display:flex;
+    position: relative;
+    top:0;
+    z-index:5;
+  }
+.icon-holder{
+  max-width:70%;
+  max-height:70%;
+margin:auto;
+transform: rotate(180deg);
+z-index:5;
+}
+  
+  @keyframes moveBus {
+    0% {
+      top: 5%;
+    }
+    100% {
+      top: 95%; /* Slightly less than the bus-route height to keep the icon within bounds */
+    }
+  }
+
+  .test--text-holder{
+    color:white;
+    position: sticky;
+    top:200px;
+    z-index:200;
+    background-color:red;
+  }

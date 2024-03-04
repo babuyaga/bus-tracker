@@ -1,0 +1,213 @@
+/* 
+
+
+.bus-stop{
+  border-bottom:1px solid rgba(255, 255, 255, 0.548);
+  max-width: 100%;
+  height:fit-content;
+  margin:20px 0px 20px 10px;
+  color:white;
+  display:flex;
+  flex-direction: row;
+  background: linear-gradient(#000000, #19191985);
+}
+
+.stop-name{
+  font-weight: bold;
+
+}
+
+.bus-stop--text{
+  width:fit-content;
+  font-size:15px;
+   font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+position:relative;
+}
+
+.bus-stop--text-holder{
+  display:flex;
+  flex-direction: column;
+  padding:15px 10px 20px 0px;
+  gap:4px;
+}
+
+
+.bus-stops--minimized{
+  max-width: 100%;
+  border-radius: 15px;
+  height:fit-content;
+  margin:20px 0px 20px 10px;
+  color:white;
+  display:flex;
+  background-color: #1919198e;
+  gap:4px;
+  color:white;
+  display:flex;
+  flex-direction: row;
+  position:sticky;
+  top:80px;
+}
+
+.time-arrival{
+  color:#BBBBBB;
+  font-weight: 600;
+}
+
+.bus-stop--nearest{
+  max-width: 100%;
+  height:fit-content;
+  padding:15px 10px 20px 10px;
+  margin:20px 0px 20px 10px;
+  color:white;
+  display:flex;
+  flex-direction: column;
+  background-color: #002c0a5d;
+gap:4px;
+border-left:6px solid #00FF38;
+}
+
+.is-nearest-stop{
+  color:#3485FF;
+  font-weight:bold;
+  font-size:14px;
+}
+
+.bus-stop--nearest .time-arrival{
+  color:#00FF38;
+  font-weight:bold;
+}
+
+.bus-stop--text-hidden{
+  display:none;
+} */
+
+
+
+.multi-stop--holder{
+  height:fit-content;
+  width:100%;
+  min-height:80px;
+min-width:200px;
+display:flex;
+flex-direction:row;
+-ms-flex-align: start;
+position: sticky;
+top:60px;
+}
+
+
+.bus-stop--marker{
+  width:18px;
+  height:18px;
+  border-radius: 40px;
+  background-color: black;
+margin:auto 0;
+position:relative;
+left:-19px;
+}
+
+
+
+.bus-stop{
+  border-bottom:1px solid rgba(255, 255, 255, 0.548);
+  max-width: 100%;
+  flex-grow: 1;
+  height:fit-content;
+  min-height:20px;
+  min-width:100px;
+  color:white;
+  display:flex;
+  flex-direction: row;
+  background: linear-gradient(#000000, #19191985);
+  margin:auto 0;
+  background-color:black;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.bus-stop--nearest {
+  max-width: 100%;
+  min-height:20px;
+  min-width:100px;
+  flex-grow: 1;
+  height:fit-content;
+  color:white;
+  display:flex;
+  flex-direction: column;
+  background-color: #002c0a5d;
+border-left:6px solid #00FF38;
+}
+.bus-stop--nearest .bus-stop--text-holder{
+  height:50px;
+}
+
+
+
+.bus-stop--minimized{
+  width: 100%;
+  border-radius: 15px;
+  height:40px;
+  align-items: center;
+  min-height:10px;
+  min-width:100px;
+  margin:auto 0;
+  color:white;
+  display:flex;
+  background-color: #191919;
+  gap:4px;
+  color:white;
+  display:flex;
+  flex-direction: row;
+  position:sticky;
+  top:80px;  
+  align-items: center;
+  justify-content: center;
+}
+
+
+.time-arrival{
+  color:#BBBBBB;
+  font-weight: 600;
+}
+
+.bus-stop--nearest{
+  max-width: 100%;
+  height:fit-content;
+  padding:15px 10px 20px 10px;
+  margin:20px 0px 20px 10px;
+  color:white;
+  display:flex;
+  flex-direction: column;
+  background-color: #002c0a5d;
+gap:4px;
+border-left:6px solid #00FF38;
+}
+
+.is-nearest-stop{
+  color:#3485FF;
+  font-weight:bold;
+  font-size:14px;
+}
+
+.bus-stop--nearest .time-arrival{
+  color:#00FF38;
+  font-weight:bold;
+}
+
+.bus-stop--text-hidden{
+  display:none;
+}
+
+.bus-stop--text-holder{
+  display:flex;
+  flex-direction: column;
+  min-height:60px;
+  height:fit-content;
+  padding:10px 0px;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
+}

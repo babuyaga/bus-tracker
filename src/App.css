@@ -1,3 +1,26 @@
+/* For the entire webpage */
+html {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+  
+}
+
+html::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+/* For a specific element */
+.element-class {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+}
+
+.element-class::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+
+
 .App {
   text-align: center;
 }
@@ -27,6 +50,30 @@
 .App-link {
   color: #61dafb;
 }
+
+
+body{
+  background-color:black;
+
+}
+
+.navbar{
+  width:90%;
+  max-width:98vw;
+  margin:auto;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  top:0px;
+z-index: 80;
+color:#FF6B00;
+padding:20px 10px 30px 10px;
+font-size:35px;
+font-weight: bold;
+background: linear-gradient(#000000 70%,transparent);
+}
+
 
 @keyframes App-logo-spin {
   from {
