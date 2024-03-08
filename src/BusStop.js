@@ -95,7 +95,7 @@ function BusStop({ stopName, isNearest,isHidden,isArrived,stopCode,arrivalTime,p
 
 
 const html_3 =(
-  <div className="multi-stop--holder" ref={ref} style={{marginTop:prevDistance/10,"zIndex":(count==0?3:1)}}>
+  <div className="multi-stop--holder" ref={ref} style={{marginTop:("20px"),"zIndex":(count==0?3:1)}}>
        
         <div className="bus-stop--marker" ref={elementRef} ></div>      
        
