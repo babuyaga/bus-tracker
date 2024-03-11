@@ -95,7 +95,7 @@ function BusStop({ stopName, isNearest,isHidden,isArrived,stopCode,arrivalTime,p
 
 
 const html_3 =(
-  <div className="multi-stop--holder" ref={ref} style={{marginTop:("20px"),"zIndex":(count==0?3:1)}}>
+  <div className="multi-stop--holder" ref={ref} style={{marginTop:`${prevDistance*300}px`,"zIndex":(count==0?3:1)}}>
        
         <div className="bus-stop--marker" ref={elementRef} ></div>      
        
@@ -103,7 +103,7 @@ const html_3 =(
      
         <div className="bus-stop" style={topPosition<150?{display:"none"}:{}}>
             <div className="bus-stop--text-holder">    
-              <div className="bus-stop--text stop-name">{stopName} {stopCode}</div>
+              <div className="bus-stop--text stop-name">{stopName} {stopCode} {height}</div>
               <div className={isNearest?'bus-stop--text is-nearest-stop':'bus-stop--text-hidden'}>Nearest Bus Stop </div>
                <div className={isArrived?'bus-stop--text-hidden':'bus-stop--text'}>Expected at: {arrivalTime} {count}</div>
                <div className={isArrived?'bus-stop--text  time-arrival':'bus-stop--text-hidden'}>Arrived at: {arrivalTime}</div>    
@@ -113,7 +113,7 @@ const html_3 =(
        
         <div className="bus-stop--minimized" style={topPosition<150?{}:{display:"none"}}>
           <div className="bus-stop--text-holder">    
-          <div className="bus-stop--text stop-name">{count==0?` ${count} stops away from you`:stopName}</div>      </div>
+          <div className="bus-stop--text stop-name">Next stop {stopName}</div>      </div>
         </div>
     
   </div>
